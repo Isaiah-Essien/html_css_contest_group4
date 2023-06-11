@@ -29,7 +29,7 @@
     position: fixed;
     right: -250px;
     top: 0;
-    background: #2a4746;
+    background: #04817f;
     z-index: 2;
     font-size: small;
     transition: 0.5s;
@@ -107,6 +107,11 @@ nav ul li a{
     object-fit: cover;
     border-radius: 20px;
 }
+#bold{
+    font-style: italic;
+    padding: 5px;
+
+}
 /* buttons */
 /* .banner-btn{
     margin: 10px auto 0;
@@ -142,7 +147,7 @@ nav ul li a{
 } */
 
 button{
-    width: 200px;
+    width: 150px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;

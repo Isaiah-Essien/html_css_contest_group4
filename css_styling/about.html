@@ -15,7 +15,7 @@
     <!--Banner section -->
     <section class="banner">
         <a href="./Home.html">
-            <img src="./css_styling/media/images_and_Videos/black-logo.png" alt="logo" class="logo">
+            <img src="./media/images_and_Videos/logo.png" alt="logo" class="logo">
         </a>
         <!-- Title -->
         <div class="about-text">
@@ -27,11 +27,11 @@
         <div id="sideNav">
             <nav>
                 <ul>
-                    <li><a href="#banner">HOME</a></li>
-                    <li><a href="#features">WELLNESS PACKAGES</a></li>
-                    <li><a href="#Wwo">ABOUT US</a></li>
-                    <li><a href="#testimonials">AVAIL PACKAGES</a></li>
-                    <li><a href="#footer">CONTACT US</a></li>
+                    <li><a href="./Home.html">HOME</a></li>
+                    <li><a href="./wellness_packages.html">WELLNESS PACKAGES</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./avail.html">AVAIL PACKAGES</a></li>
+                    <li><a href="">CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,11 +49,9 @@
                         <br>
                     </p>
                     <div>
+                        <p id="bold"><strong>Click below to check our wellness packages</strong></p>
                         <a href="">
-                            <button type="button"><span></span>Nutrition</button>
-                        </a>
-                        <a href="">
-                            <button type="button"><span></span>Fitness</button>
+                            <button type="button"><span></span>HERE</button>
                         </a>
                     </div>
                     <!-- <div class="banner-btn">
@@ -123,11 +121,11 @@
     menuBtn.onclick = function(){
         if(sideNav.style.right == "-250px"){
             sideNav.style.right = "0";
-            menu.src ="/media/images_and_Videos/close.png";
+            menu.src ="./media/images_and_Videos/close.png";
         }
         else{
         sideNav.style.right ="-250px";
-        menu.src ="./menu.png";
+        menu.src ="./media/images_and_Videos/menu.png";
         }
     }
 
