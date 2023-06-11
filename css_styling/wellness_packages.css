@@ -11,7 +11,7 @@
     background-position: center;
     padding-top: 0%;
     height: 100vh;
-    margin-top: 0.3%;
+    margin-top: 0%;
 }
 
 /* The logo and landing page styling continues */
@@ -146,10 +146,10 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -2.6rem;
+    margin-bottom: -5rem;
     background-blend-mode: color;
-    background: rgb(75, 223, 95);
-    background: radial-gradient(50% 85.9% at 50% 10%, rgba(112, 150, 104, 0) 0%, #0e685f 100%);
+    background: rgb(255, 255, 255);
+    background: radial-gradient(50% 85.9% at 50% 50%, rgba(255, 255, 255, 0) 0%, #dbe2e1 100%);
     color: rgb(255, 255, 255);
 }
 
@@ -228,12 +228,34 @@ nav ul li a:hover {
     padding-left: 3%;
     padding-right: 3%;
 }
+.Nutritional_plan,      /*Box of the packages*/
+.fitness_plan {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+}
+
+.Nutritional_plan ul,
+.fitness_plan ul {
+    list-style-position: inside; /* Position the bullet points inside the box */
+    padding-left: 20px; /* Adjust the padding as needed */
+    color: #0e685f;
+}
+
 
 .packages h2 {
     font-family: 'gt_walsheimblack_oblique';
     font-size: 1.5vw;
     padding: 1%;
     margin-block-start: unset;
+    margin-top: 0%;
+    color: #0e685f;
 }
 
 .packages .Fitness_Plans h2 {
@@ -243,18 +265,21 @@ nav ul li a:hover {
     margin-block-start: unset;
     text-align: right;
     padding-right: 5%;
+    color: #0e685f;
 }
 
-.packages h3 {
-    background: #fff;
-    color: #0e685f;
+.packages h3 {      /*Different packages 1,2,3 boxes */
+    background: #0e685f;
+    color: #ffffff;
     padding: 0.5%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: -1.9%;
     margin-bottom: 3%;
+    margin-right: -2%;
+    margin-left: -2%;
 }
 
-.packages_btn {
+.packages_btn { /*Plan choice button */
     background: rgb(255, 255, 255);
     border-radius: 25px;
     border: none;
@@ -280,6 +305,7 @@ nav ul li a:hover {
 
 .packages .nutrition p {
     font-size: 18px;
+    color: #0e685f;
 }
 .Nutritional_packages,
 .Fitness_Plans {
@@ -291,7 +317,9 @@ nav ul li a:hover {
 }
 
 .Nutritional_packages .pack,
-.Nutritional_packages .desc {
+.Nutritional_packages .desc,
+.fitness_plan .pack,
+.fitness_plan .desc {
     font-weight: bold;
 }
 
@@ -301,5 +329,10 @@ nav ul li a:hover {
 .wellness_packages .packages_closure p {
     font-size: 18px;
     padding: 4%;
+    padding-bottom: 100px;
     display: flex;
+    color: #0e685f;
+}
+.home_btn {
+    padding: 0px;
 }
