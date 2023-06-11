@@ -77,7 +77,7 @@ form .package input[type="checkbox"] {
 #thank-you a {
   display: inline-block;
   margin-top: 20px;
-  color: #337ab7;
+  color: hsl(180, 58%, 33%);
   text-decoration: none;
 }
 
