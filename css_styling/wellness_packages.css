@@ -1,11 +1,158 @@
+<<<<<<< HEAD
 /*--This is the wellness package section sections--*/
+=======
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the green background at the landing page */
+#banner {
+    background: linear-gradient(to left, rgba(0.5, 0, 0, 0), #0e685f), url(./media/images_and_Videos/Fitness&nutrition.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 0%;
+    height: 100vh;
+    margin-top: 0.3%;
+}
+
+/* The logo and landing page styling continues */
+.logo{
+    width: 70px;
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    border-radius: 8px;
+}
+
+.banner-text {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 20%;
+    text-align: left;
+    padding-left: 3%;
+    position: relative;
+    animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+    opacity: 0;
+    transform: translateX(100%);
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.banner-text h1 {
+    font-size: 5vw;
+    font-family: 'Kalam', cursive;
+}
+
+.banner-text p {
+    font-size: 1.5vw;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.banner-btn {
+    margin: 4vw auto 0;
+}
+
+.banner-btn a {
+    width: 20%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1vw;
+    padding: 1vw 0;
+    color: #ffffff;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0e685f;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    background-color: white;
+    color: white ;
+}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #04817f;
+    z-index: 2;
+    font-size: small;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background: #0e685f;
+}
+    
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #06655c;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 8px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+#menuBtn:hover {
+    background: #107e73;
+}
+
+/* This is the wellness package section */
+>>>>>>> 59fa14f42e2eaaaae3b543515a9e15c65835da62
 .wellness_packages {
     left: 20%;
     right: 20%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: -2.6rem;
     background-blend-mode: color;
+<<<<<<< HEAD
     background: #09413b;
     background: radial-gradien(
     50% 85.9% at 50% 10%,
@@ -119,4 +266,160 @@ main {
 
 .container1 p {
     width: 50%;
+=======
+    background: rgb(75, 223, 95);
+    background: radial-gradient(50% 85.9% at 50% 10%, rgba(112, 150, 104, 0) 0%, #0e685f 100%);
+    color: rgb(255, 255, 255);
+}
+
+.wellness_packages h1 {
+    font-size: 5vw;
+    font-family: 'Kalam';
+    text-align: center;
+    line-height: 20%;
+    color: #0e685f;
+    margin-top: 4%;
+}
+
+.wellness_packages .packages {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+}
+
+.Nutritional_packages,
+.Fitness_Plans {
+    flex-basis: 45%;
+    padding: 2%;
+}
+
+.wellness_packages h1 {
+    font-size: 5vw; /* Adjust the font size using vw units */
+}
+
+.wellness_packages p {
+    font-size: 2vw; /* Adjust the font size using vw units */
+}
+
+@media (max-width: 768px) {
+    .wellness_packages h1 {
+      font-size: 8vw; /* Adjust the font size for smaller screens */
+    }
+    
+    .wellness_packages p {
+      font-size: 4vw; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .wellness_packages h1 {
+      font-size: 10vw; /* Adjust the font size for even smaller screens */
+    }
+    
+    .wellness_packages p {
+      font-size: 6vw; /* Adjust the font size for even smaller screens */
+    }
+}
+
+.packages img {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .packages img {
+      height: 250px; /* Adjust the height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .packages img {
+      height: 150px; /* Adjust the height for even smaller screens */
+    }
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.packages h2 {
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 1.5vw;
+    padding: 1%;
+    margin-block-start: unset;
+}
+
+.packages .Fitness_Plans h2 {
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 1.5vw;
+    line-height: 1.3em;
+    margin-block-start: unset;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.packages h3 {
+    background: #fff;
+    color: #0e685f;
+    padding: 0.5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.packages_btn {
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: none;
+    padding: 0.7vw;
+    color: #0e685f;
+    font-weight: 500;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+    margin: 2vw;
+    padding: 1vw;
+    transition: background-color 0.5s; 
+}
+
+.packages_btn:hover {
+    background-color: #107e73; 
+    color: #ffffff; 
+}
+
+.bttn {
+    text-align: center;
+}
+
+.packages .nutrition p {
+    font-size: 18px;
+}
+.Nutritional_packages,
+.Fitness_Plans {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2%;
+    margin-top: -3%;
+}
+
+.Nutritional_packages .pack,
+.Nutritional_packages .desc {
+    font-weight: bold;
+}
+
+.packages .offer{
+    font-weight: bolder;
+}
+.wellness_packages .packages_closure p {
+    font-size: 18px;
+    padding: 4%;
+    display: flex;
+>>>>>>> 59fa14f42e2eaaaae3b543515a9e15c65835da62
 }
