@@ -319,7 +319,7 @@ footer{
     align-items: baseline;
     justify-content: space-around;
     width: 90%;
-    margin: 20px auto 60px;
+    margin: 10px auto 20px;
 }
 .container-footer>div>h2{
     color: #000100;
@@ -409,19 +409,18 @@ footer{
     color: #fff;
     transform: translateY(-8px);
 }
-.footer-copyright{
+/* .footer-copyright{
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-size: 12px;
-    /* ~ */
-    display: flex;
+    /* line-height: 15px; */
+    /*display: flex;*/
     /* position: relative; */
     /* right: 500px; */
-    justify-content: center;
-}
+    /*justify-content: center;*/
 
 @media screen and (max-width: 770px) {
-    .container-footer{
+    .container-footer>div{
         flex-basis: 100%;
         font-size: 14px;
     }
