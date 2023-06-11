@@ -6,7 +6,7 @@
 
 /* Styling for the green background at the landing page */
 #banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #0e685f), url(./media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
+    background: linear-gradient(to left, rgba(0.5, 0, 0, 0), #0e685f), url(./media/images_and_Videos/Fitness&nutrition.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 0%;
@@ -16,17 +16,32 @@
 
 /* The logo and landing page styling continues */
 .logo {
-    width: 3%;
+    width: 50px;
     position: absolute;
-    top: 1.1%;
-    left: 5%;
+    top: 4%;
+    left: 7%;
     border-radius: 8px;
 }
 
 .banner-text {
     text-align: center;
     color: #ffffff;
-    padding-top: 15%;
+    padding-top: 20%;
+    text-align: left;
+    padding-left: 3%;
+    position: relative;
+    animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+    opacity: 0;
+    transform: translateX(100%);
+    }
+    100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
 }
 
 .banner-text h1 {
@@ -78,33 +93,49 @@
     color: white ;
 }
 
-.navbar ul {
-    list-style: none;
-    background: #0e685f;
-    padding: 0;
-    margin: 0;
-    text-align: right;
-}
-
-.navbar li {
-    display: inline-block;
-    justify-content: space-evenly;
-}
-
-.navbar a {
-    text-decoration: none;
-    width: 12vw;
-    display: block;
-    padding: 1.3vw 0vw;
-    color: white;
-    font-weight: bold;
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #04817f;
+    z-index: 2;
     font-size: small;
-    font-family: 'Poppins';
-    text-align: center;
-    margin: 0;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
 }
 
-.navbar a:hover {
+nav ul li a:hover {
+    background: #0e685f;
+}
+    
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #06655c;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 8px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+#menuBtn:hover {
     background: #107e73;
 }
 
@@ -126,9 +157,9 @@
     font-size: 5vw;
     font-family: 'Kalam';
     text-align: center;
-    line-height: 50%;
-    color: red;
-    margin-top: 2%;
+    line-height: 20%;
+    color: #0e685f;
+    margin-top: 4%;
 }
 
 .wellness_packages .packages {
@@ -145,9 +176,49 @@
     padding: 2%;
 }
 
+.wellness_packages h1 {
+    font-size: 5vw; /* Adjust the font size using vw units */
+}
+
+.wellness_packages p {
+    font-size: 2vw; /* Adjust the font size using vw units */
+}
+
+@media (max-width: 768px) {
+    .wellness_packages h1 {
+      font-size: 8vw; /* Adjust the font size for smaller screens */
+    }
+    
+    .wellness_packages p {
+      font-size: 4vw; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .wellness_packages h1 {
+      font-size: 10vw; /* Adjust the font size for even smaller screens */
+    }
+    
+    .wellness_packages p {
+      font-size: 6vw; /* Adjust the font size for even smaller screens */
+    }
+}
+
 .packages img {
     height: auto;
     max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .packages img {
+      height: 250px; /* Adjust the height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .packages img {
+      height: 150px; /* Adjust the height for even smaller screens */
+    }
 }
 
 .packages {
@@ -207,6 +278,9 @@
     text-align: center;
 }
 
+.packages .nutrition p {
+    font-size: 18px;
+}
 .Nutritional_packages,
 .Fitness_Plans {
     display: flex;
@@ -221,7 +295,11 @@
     font-weight: bold;
 }
 
-.wellness_packages .packages_closure {
+.packages .offer{
+    font-weight: bolder;
+}
+.wellness_packages .packages_closure p {
+    font-size: 18px;
     padding: 4%;
     display: flex;
 }
