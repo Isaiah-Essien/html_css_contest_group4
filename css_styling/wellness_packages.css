@@ -1,145 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Styling for the green background at the landing page */
-#banner {
-    background: linear-gradient(to left, rgba(0.5, 0, 0, 0), #0e685f), url(./media/images_and_Videos/Fitness&nutrition.jpg);
+#banner2{
+    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/nut4.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 0%;
     height: 100vh;
+<<<<<<< HEAD
     margin-top: 0%;
+=======
+>>>>>>> 49a511c74af8c4561c4e23f7d47ad3b19c6756eb
 }
 
-/* The logo and landing page styling continues */
-.logo {
-    width: 50px;
-    position: absolute;
-    top: 4%;
-    left: 7%;
-    border-radius: 8px;
-}
 
-.banner-text {
-    text-align: center;
-    color: #ffffff;
-    padding-top: 20%;
-    text-align: left;
-    padding-left: 3%;
-    position: relative;
-    animation: slide-in 1s ease-out forwards;
-}
 
-@keyframes slide-in {
-    0% {
-    opacity: 0;
-    transform: translateX(100%);
-    }
-    100% {
-    opacity: 1;
-    transform: translateX(0);
-    }
-}
-
-.banner-text h1 {
-    font-size: 5vw;
-    font-family: 'Kalam', cursive;
-}
-
-.banner-text p {
-    font-size: 1.5vw;
-    font-style: italic;
-    margin: 0 auto;
-}
-
-.banner-btn {
-    margin: 4vw auto 0;
-}
-
-.banner-btn a {
-    width: 20%;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 1vw;
-    padding: 1vw 0;
-    color: #ffffff;
-    border: 0.5px solid #fff;
-    border-radius: 4px;
-    position: relative;
-    z-index: 1;
-    transition: color 0.5s;
-}
-
-.banner-btn a span {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #0e685f;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.banner-btn a:hover span {
-    width: 100%;
-}
-
-.banner-btn a:hover {
-    background-color: white;
-    color: white ;
-}
-
-#sideNav{
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: -250px;
-    top: 0;
-    background: #04817f;
-    z-index: 2;
-    font-size: small;
-    transition: 0.5s;
-}
-nav ul li{
-    list-style: none;
-    margin: 50px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-nav ul li a:hover {
-    background: #0e685f;
-}
-    
-#menuBtn{
-    width: 50px;
-    height: 50px;
-    background: #06655c;
-    text-align: center;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    border-radius: 8px;
-    z-index: 3;
-    cursor: pointer;
-}
-
-#menuBtn img {
-    width: 20px;
-    margin-top: 15px;
-}
-
-#menuBtn:hover {
-    background: #107e73;
-}
-
-/* This is the wellness package section */
+/*--This is the wellness package section sections--*/
 .wellness_packages {
     left: 20%;
     right: 20%;
@@ -148,85 +20,105 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: -5rem;
     background-blend-mode: color;
+<<<<<<< HEAD
     background: rgb(255, 255, 255);
     background: radial-gradient(50% 85.9% at 50% 50%, rgba(255, 255, 255, 0) 0%, #dbe2e1 100%);
+=======
+    background: #09413b;
+    background: radial-gradien(
+    50% 85.9% at 50% 10%,
+    rgba(112, 150, 104, 0) 0%,
+    #0e685f 100%
+    );
+>>>>>>> 49a511c74af8c4561c4e23f7d47ad3b19c6756eb
     color: rgb(255, 255, 255);
 }
 
-.wellness_packages h1 {
-    font-size: 5vw;
-    font-family: 'Kalam';
+main > h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
     text-align: center;
-    line-height: 20%;
-    color: #0e685f;
-    margin-top: 4%;
+    font-family: 'Kalam', cursive;
 }
 
-.wellness_packages .packages {
+main {
+    background-color:;
+    opacity: 1;
+}
+
+.Nut-pack {
+    padding:100px
+}
+.container1 {
     display: flex;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-top: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: cente;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.Nutritional_packages,
-.Fitness_Plans {
-    flex-basis: 45%;
-    padding: 2%;
+.Nut-pack h2 {
+        text-align: center;
 }
 
-.wellness_packages h1 {
-    font-size: 5vw; /* Adjust the font size using vw units */
+.npack1 {
+    padding-bottom: 30px;
 }
 
-.wellness_packages p {
-    font-size: 2vw; /* Adjust the font size using vw units */
+.npack2 {
+    padding-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-    .wellness_packages h1 {
-      font-size: 8vw; /* Adjust the font size for smaller screens */
-    }
-    
-    .wellness_packages p {
-      font-size: 4vw; /* Adjust the font size for smaller screens */
-    }
+.npack3 {
+    padding-bottom: 30px;
 }
 
-@media (max-width: 480px) {
-    .wellness_packages h1 {
-      font-size: 10vw; /* Adjust the font size for even smaller screens */
-    }
-    
-    .wellness_packages p {
-      font-size: 6vw; /* Adjust the font size for even smaller screens */
-    }
+.Fit-pack {
+        padding-left:100px;
+        padding-right: 100px;
+}
+.Fit-pack h2 {
+    text-align: center;
 }
 
-.packages img {
-    height: auto;
+.fpack1 {
+    padding-bottom: 30px;
+}
+
+.fpack2 {
+    padding-bottom: 30px;
+}
+
+.fpack3 {
+    padding-bottom: 30px;
+}
+
+.img-section{
+    flex: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+}
+.img-section img{
     max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: blue;
 }
 
-@media (max-width: 768px) {
-    .packages img {
-      height: 250px; /* Adjust the height for smaller screens */
-    }
+.content-section p{
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-@media (max-width: 480px) {
-    .packages img {
-      height: 150px; /* Adjust the height for even smaller screens */
-    }
-}
-
-.packages {
+.container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 3%;
-    padding-right: 3%;
+    align-items: center;
 }
 .Nutritional_plan,      /*Box of the packages*/
 .fitness_plan {
@@ -249,6 +141,7 @@ nav ul li a:hover {
 }
 
 
+<<<<<<< HEAD
 .packages h2 {
     font-family: 'gt_walsheimblack_oblique';
     font-size: 1.5vw;
@@ -309,9 +202,25 @@ nav ul li a:hover {
 }
 .Nutritional_packages,
 .Fitness_Plans {
+=======
+.container3 {
+>>>>>>> 49a511c74af8c4561c4e23f7d47ad3b19c6756eb
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 p {
     width: 50%;
+<<<<<<< HEAD
     padding: 2%;
     margin-top: -3%;
 }
@@ -335,4 +244,6 @@ nav ul li a:hover {
 }
 .home_btn {
     padding: 0px;
+=======
+>>>>>>> 49a511c74af8c4561c4e23f7d47ad3b19c6756eb
 }

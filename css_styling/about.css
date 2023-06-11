@@ -177,6 +177,9 @@ button:hover span{
 button:hover{
     border: none;
 }
+button:hover{
+    color: #fff;
+}
 /* teamates styling */
 .team{
     border-top: 5px solid rgb(46, 91, 74);
@@ -186,7 +189,7 @@ button:hover{
     padding: 50px;
     font-size: 50px;
     font-weight: 30px;
-    color: #2a4746;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 .team h4{
