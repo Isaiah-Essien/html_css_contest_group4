@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WellFit</title>
         <link rel="stylesheet" href="wellness_packages.css">
+        <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,173 +14,173 @@
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     </head>
     <body>
-
 <!--This is the Banner section of the landing page-->
-    <section>
-        <a href=""><img src="./media/images_and_Videos/logo_sample.jpg" class="logo"></a>
-    </section>
-
-<!--Navigation section-->
-    <section>
-        <div class="navbar">
-            <ul>
-                <li><a href="Home.html">HOME</a></li>
-                <li><a href="wellness_packages.html">WELLNESS PACKAGES</a></li>
-                <li><a href="#Wwo">ABOUT US</a></li>
-                <li><a href="#testimonials">AVAILABLE PACKAGES</a></li>
-                <li><a href="#footer">CONTACT US</a></li>
-            </ul>
+<section id="banner">
+    <a href=""><img src="/media/images_and_Videos/logo_sample.jpg" class="logo"></a>
+    <div class="banner-text">
+        <h2>Welcome to</h2>
+        <h1>WELL FIT LIFE</h1>
+        <p>...elevate your wellness</p>
+        <div class="banner-btn">
+            <a href="wellness_packages.html"><span></span>Nutrition</a>
+            <a href="wellness_packages.html"><span></span>Fitness</a>
         </div>
-        <div>
-            <img src="./media/images_and_Videos/menu.png" id="menu">
-        </div>
-    </section>
+    </div>
+</section>
 
-<!--This is the Banner section of the landing page-->
-        <section id="banner">
-            <div class="banner-text">
-                <h2>Welcome to</h2>
-                <h1>WELL FIT LIFE</h1>
-                <p>...elevate your wellness</p>
-                <div class="banner-btn">
-                    <a href="wellness_packages.html"><span></span>Nutrition</a>
-                    <a href="wellness_packages.html"><span></span>Fitness</a>
-                </div>
-            </div>
-        </section>
+<!--This is the Side Navigation section-->
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="/Home.html">HOME</a></li>
+            <li><a href="wellness_packages.html">WELLNESS PACKAGES</a></li>
+            <li><a href="#Wwo">ABOUT US</a></li>
+            <li><a href="#testimonials">AVAIL PACKAGES</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="/media/images_and_Videos/menu.png" id="menu">
+</div>
     <main>
-    <!--This is the wellness package section sections-->
-        <section class="wellness_packages">
-                <h1><span>WELLNESS</span> PACKAGES</h1>
-                <div class="packages">
-                    <div class="Nutritional_packages">
-                    <!-- Nitritional package section -->
-                        <h2>OUR NUTRITIONAL PACKAGES</h2>
-                        <div>
-                            <img src="./media/images_and_Videos/Nutrition.jpg" alt="Nutrition">
-                        </div>
+            <!--This is the section for the packages-->
+                <h1>WELLNESS PACKAGES</h1>
+                <section class="Nut-pack">
+                    <!-- Nutritional package section -->
+                        <h2>NUTRITION PACKAGES</h2>
+                        <div class="container1">
                             <p>
-                                Nutrition is crucial in sustaining energy levels and overall health. 
-                                Our Nutrition Plans are tailored to provide remote employees with the necessary nutrients and guidance for optimal well-being. 
-                                <br>We offer the following packages:
+                                Our nutrition packages are tailored to help you make informed food choices, manage your weight effectively, and develop a positive relationship with food.<br> Whether you're looking for personalized meal plans, expert consultations, or workshops on mindful eating, we have the right package to meet your needs.
+                                Following this is our selection of packages
                             </p>
-                        <div class="Nutritional_plan">
-                            <h3><span>PACKAGE 1:</span> Balanced Eating</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> A well-rounded nutrition plan that emphasises a balanced diet, incorporating essential macronutrients and micronutrients.</li>
-                                    <li><span>Benefits:</span>  Improved energy levels, enhanced focus, and overall wellness.</li>
-                                    <li><span>Program Details:</span> Nutritional guidelines, meal suggestions, and expert support.</li>
-                                </ul>
-                            </p>
+                            </div>               
+                            <section class="npack1">
+                                <div class="container2">
+                                    <div class="img-section">
+                                        <img src="/media/images_and_Videos/Nutrition.jpg" alt="Nutrition">
+                                    </div>
+                                    <div class="content-section">
+                                        <h3>Healthy Eating Starter Kit</h3>
+                                <p>Description: This package is designed for employees who want to kickstart their journey towards a healthier diet. It includes personalized meal plans, nutrition consultations, and a variety of resources to help employees make informed food choices.
+                                Duration: 1 month </p>
+                                <a href="" class="button" >Choose Package</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="npack2">
+                        <div class="container3">
+                            <div class="img-section">
+                                <img src="/media/images_and_Videos/Nut2.jpg" alt="Nutrition">
+                            </div>
+                            <div class="content-section">
+                            <h3>Weight Management Program</h3>
+                            <p>Description: This package is ideal for employees looking to manage their weight effectively. It offers customized meal plans, regular check-ins with a nutritionist, and access to a weight management app for tracking progress.
+                            Duration: 3 months</p>
                             <div>
-                                <button onclick="document.location='#form'">Choose package</button>
+                                <a href="" class="button" >Choose Package</a>
                             </div>
                         </div>
-                        <div class="Nutritional_plan">
-                            <h3><span>PACKAGE 2:</span> Weight Management</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> A personalised plan to support weight management goals, including a combination of healthy eating habits and portion control.</li>
-                                    <li><span>Benefits:</span>  Healthy weight management, increased self-confidence, and improved overall health.</li>
-                                    <li><span>Program Details:</span> Customised meal plans, guidance on portion control, and ongoing support from nutrition experts.</li>
-                                </ul>
-                            </p>
+                        </div>
+                        </section>
+                        <section class="npack3">
+                            <div class="container4">
+                            <div class="img-section">
+                                <img src="/media/images_and_Videos/Nut3.jpg" alt="Nutrition">
+                            </div>
+                        <div class="content-section">
+                            <h3>Mindful Eating Workshop</h3>
+                            Description: This package focuses on promoting mindful eating habits among employees. It includes interactive workshops, mindfulness exercises, and guidance on creating a positive relationship with food.
+                            Duration: Half-day workshop
                             <div>
-                                <button onclick="document.location='#form'">Choose package</button>
+                                <a href="" class="button" >Choose Package</a>
+                            </div>
                             </div>
                         </div>
-                        <div class="Nutritional_plan">
-                            <h3><span>PACKAGE 3:</span> Plant-Based Lifestyle</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> A plant-based nutrition plan that focuses on whole foods, providing essential nutrients while supporting environmental sustainability.</li>
-                                    <li><span>Benefits:</span> Increased intake of fruits and vegetables, reduced environmental impact, and improved health outcomes.</li>
-                                    <li><span>Program Details:</span> Plant-based meal suggestions, educational resources, and expert guidance.</li>
-                                </ul>
-                            </p>
-                            <div>
-                                <button onclick="document.location='#form'">Choose package</button>
-                            </div>
-                        </div>
-                    </div>  
+                    </section>
+                    
+                </section>
+                <section class="Fit-pack">
                     <div class="Fitness_Plans">
                     <!-- Fitness plan section -->
-                        <h2>OUR FITNESS PACKAGES</h2>
-                        <div>
-                            <img src="./media/images_and_Videos/fitness.jpg" alt="Fitness">
-                        </div>
+                        <h2>FITNESS PACKAGES</h2>
+                        <div class="container1">
                             <p>
-                                Staying physically active is crucial for maintaining a healthy lifestyle. 
-                                Our Fitness Plans are designed to help remote employees incorporate exercise into their daily routines, regardless of their location.
-                                <br>We offer the following packages:
+                                Stay active and energized with our fitness packages!<br> From invigorating group exercise classes led by certified instructors to personalized training programs designed to help you reach your fitness goals, we have something for everyone.<br> Join our classes, work with a personal trainer, or unwind at a wellness retreat to rejuvenate your body and mind.
                             </p>
-                        <div class="fitness_plan">
-                            <h3><span>PACKAGE 1:</span> Home Workouts</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> A collection of effective workout routines that can be performed in the comfort of one's home, requiring minimal equipment.</li>
-                                    <li><span>Benefits:</span>  Improved strength and flexibility, stress reduction, and enhanced overall fitness.</li>
-                                    <li><span>Program Details:</span> Video tutorials, workout schedules, and guidance on proper form and technique.</li>
-                                </ul>
-                            </p>
+                            </div>               
+                            <section class="fpack1">
+                                <div class="container2">
+
+                                    <div class="img-section">
+                                        <img src="/media/images_and_Videos/fit1.jpg" alt="Nutrition">
+                                    </div>
+                                    <div class="content-section">
+                                        <h3>Group Exercise Classes</h3>
+                                 <p>Description: This package offers a variety of group exercise classes to cater to different fitness levels and interests. Employees can choose from options such as yoga, Zumba, strength training, and more. Classes are conducted by certified instructors.
+                                    Duration: Ongoing, with classes scheduled throughout the week
+                                     </p>
+                                <a href="" class="button" >Choose Package</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="fpack2">
+                                <div class="container3">
+                            <div class="img-section">
+                                <img src="/media/images_and_Videos/fit2.jpg" alt="Nutrition">
+                            </div>
+                            <div class="content-section">
+                            <h3> Personal Training Program</h3>
+                            <p>Description: This package provides one-on-one sessions with a personal trainer to help employees achieve their fitness goals. The program includes personalized workout plans, regular progress assessments, and nutritional guidance.
+                            Duration: 12 weeks</p>
                             <div>
-                                <button onclick="document.location='#form'">Choose package</button>
+                                <a href="" class="button" >Choose Package</a>
                             </div>
                         </div>
-                        <div class="fitness_plan">
-                            <h3><span>PACKAGE 2:</span> Yoga and Mindfulness</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> A holistic program that combines yoga, meditation, and mindfulness practices to promote physical and mental well-being.</li>
-                                    <li><span>Benefits:</span> Enhanced relaxation, improved mental focus, and increased mind-body connection.</li>
-                                    <li><span>Program Details:</span> Yoga sequences, guided meditation sessions, and resources for mindfulness practices.</li>
-                                </ul>
-                            </p>
-                            <div>
-                                <button onclick="document.location='#form'">Choose package</button>
-                            </div>
                         </div>
-                        <div class="fitness_plan">
-                            <h3><span>PACKAGE 3:</span> Outdoor Adventures</h3>
-                            <p>
-                                <ul>
-                                    <li><span>Description:</span> An active and adventurous program that encourages remote employees to explore the outdoors while engaging in various physical activities.</li>
-                                    <li><span>Benefits:</span> Increased cardiovascular fitness, exposure to nature, and mental rejuvenation.</li>
-                                    <li><span>Program Details:</span> Outdoor activity recommendations, safety guidelines, and suggested itineraries.</li>
-                                </ul>
-                            </p>
+                        </section>
+                        <section class="fpack3">
+                            <div class="container3">
+                            <div class="img-section">
+                                <img src="/media/images_and_Videos/fit3.jpg" alt="Nutrition">
+                            </div>
+                        <div class="content-section">
+                            <h3>Wellness Retreat:</h3>
+                            <p>Description: This package offers a rejuvenating wellness retreat experience for employees. It includes a weekend getaway at a peaceful location, outdoor activities like hiking and yoga, healthy meals, and workshops on stress management and self-care.
+                            Duration: 2-day retreat</p>
                             <div>
-                                <button onclick="document.location='#form'">Choose package</button>
+                                <a href="" class="button" >Choose Package</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="packages_closure">
-                    <p>
-                        These wellness packages provide a glimpse into the diverse and exciting offerings available to employees.
-                        Each package caters to specific wellness goals, ensuring a holistic approach to nutrition and fitness. 
-                        Incorporating images and videos showcasing the package highlights can add visual appeal and engage the users, 
-                        inspiring them to embark on their remote wellness journey.
-                    </p>
-                </div>
-                <button onclick="document.location='Home.html'">Back To Home</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <p></p>
-        </div>
+                    </section>
+                    
+                </section>
+        <!--A little script for the menu and side nav. Nothing too serious-->
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right ="-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src ="/media/images_and_Videos/close.png";
+        }
+        else{
+        sideNav.style.right ="-250px";
+        menu.src ="/media/images_and_Videos/menu.png";
+        }
+    }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 700,
+    speedAsDuration: true
+});
+</script>
+<footer>
     </footer>
 </body>
 </html>
