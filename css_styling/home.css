@@ -5,7 +5,7 @@
 }
 /*Styling dor the green backgroud at the landing page*/
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(/media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -13,7 +13,7 @@
 
 /*The logo and landing page styling continues*/
 .logo{
-    width: 50px;
+    width: 70px;
     position: absolute;
     top: 4%;
     left: 7%;

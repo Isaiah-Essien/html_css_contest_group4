@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellFit - Avail Packages</title>
+    <link rel="stylesheet" href="/avail.css">
+    <style>
+        /* Hide the thank you message by default */
+        #thank-you {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<<<<<<< HEAD:html_structures/avail.html
+  <h1>Avail Packages</h1>
+  
+  <div id="initial-text">
+    <p>Please fill out the form below to let us know which wellness packages you would like to avail. Our team will reach out to you shortly to discuss the details and provide further assistance.</p>
+  </div>
+=======
+  <h1>Available Packages</h1>
+  <p>Please fill out the form below to let us know which wellness packages you would like to avail. Our team will reach out to you shortly to discuss the details and provide further assistance.</p>
+>>>>>>> 6e59e12adedc468b7bd44547a4efb56a3ffa1af8:css_styling/avail.html
+  
+  <form action="/submit" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <h2>Nutrition Packages:</h2>
+    <input type="checkbox" id="nutrition1" name="nutrition_packages" value="Nourish and Glow">
+    <label for="nutrition1">Balanced Eating</label><br>
+    
+    <input type="checkbox" id="nutrition2" name="nutrition_packages" value="Cleanse and revitalize">
+    <label for="nutrition2">Weight Management</label><br>
+    
+    <input type="checkbox" id="nutrition3" name="nutrition_packages" value="Elevate and perform">
+    <label for="nutrition3">Plant-Based Lifestyle</label><br>
+    
+    <h2>Fitness Packages:</h2>
+    <input type="checkbox" id="fitness1" name="fitness_packages" value="Active Breaks and Flexibility">
+    <label for="fitness1">Home Workouts Sessions</label><br>
+    
+    <input type="checkbox" id="fitness2" name="fitness_packages" value="Strength and Sculpt">
+    <label for="fitness2">Yoga and Mindfulness</label><br>
+    
+    <input type="checkbox" id="fitness3" name="fitness_packages" value="Cardio Blast and Endurance">
+    <label for="fitness3">Outdoor Adventures</label><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Thank you message -->
+  <div id="thank-you">
+    <h2>Thank you for your submission!</h2>
+    <p>Your package selections have been successfully submitted. Our team will contact you shortly to discuss the next steps and provide further details.</p>
+    <button onclick="goToHomePage()">Back to Home</button>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    const initialText = document.getElementById('initial-text');
+    const thankYouMessage = document.getElementById('thank-you');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      form.style.display = 'none'; // Hide the form
+      initialText.style.display = 'none'; // Hide the initial text
+      thankYouMessage.style.display = 'block'; // Show the thank you message
+    });
+
+    function goToHomePage() {
+      window.location.href = "home.html"; 
+    }
+  </script>
+</body>
+</html>
