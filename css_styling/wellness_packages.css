@@ -1,56 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/*Styling dor the green backgroud at the landing page*/
-#banner{
-    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
+
+/* Styling for the green background at the landing page */
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0e685f), url(./media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 10;
+    padding-top: 0%;
     height: 100vh;
+    margin-top: 0.3%;
 }
 
-/*The logo and landing page styling continues*/
-.logo{
-    width: 50px;
+/* The logo and landing page styling continues */
+.logo {
+    width: 3%;
     position: absolute;
-    top: 1.3%;
+    top: 1.1%;
     left: 5%;
     border-radius: 8px;
 }
-.banner-text{
+
+.banner-text {
     text-align: center;
     color: #ffffff;
-    padding-top: 170px;
+    padding-top: 15%;
 }
-.banner-text h1{
-    font-size: 500%;
+
+.banner-text h1 {
+    font-size: 5vw;
     font-family: 'Kalam', cursive;
 }
-.banner-text p{
-    font-size: 18px;
+
+.banner-text p {
+    font-size: 1.5vw;
     font-style: italic;
     margin: 0 auto;
 }
-.banner-btn{
-    margin: 70px auto 0;
+
+.banner-btn {
+    margin: 4vw auto 0;
 }
-.banner-btn a{
-    width: 150px;
+
+.banner-btn a {
+    width: 20%;
     text-decoration: none;
     display: inline-block;
-    margin: 0 10px;
-    padding: 12px 0;
-    color: #0e685f;
+    margin: 0 1vw;
+    padding: 1vw 0;
+    color: #ffffff;
     border: 0.5px solid #fff;
     border-radius: 4px;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
 }
-.banner-btn a span{
+
+.banner-btn a span {
     width: 0;
     height: 100%;
     position: absolute;
@@ -60,58 +68,160 @@
     z-index: -1;
     transition: 0.5s;
 }
-.banner-btn a:hover span{
+
+.banner-btn a:hover span {
     width: 100%;
 }
-.banner-btn a:hover{
-    color: #ffffff;
+
+.banner-btn a:hover {
+    background-color: white;
+    color: white ;
 }
-.navbar ul{
+
+.navbar ul {
     list-style: none;
     background: #0e685f;
     padding: 0;
     margin: 0;
     text-align: right;
 }
-.navbar li{
+
+.navbar li {
     display: inline-block;
     justify-content: space-evenly;
 }
+
 .navbar a {
     text-decoration: none;
-    width: 180px;
+    width: 12vw;
     display: block;
-    padding: 20px 0.0005px;
+    padding: 1.3vw 0vw;
     color: white;
     font-weight: bold;
+    font-size: small;
     font-family: 'Poppins';
     text-align: center;
-}
-.navbar a:hover{
-    background: gray;
+    margin: 0;
 }
 
-/*--This is the wellness package section sections--*/
+.navbar a:hover {
+    background: #107e73;
+}
+
+/* This is the wellness package section */
 .wellness_packages {
     left: 20%;
     right: 20%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: -2.6rem;
     background-blend-mode: color;
     background: rgb(75, 223, 95);
-    background: radial-gradient(
-    50% 85.9% at 50% 10%,
-    rgba(112, 150, 104, 0) 0%,
-    #0e685f 100%
-    );
+    background: radial-gradient(50% 85.9% at 50% 10%, rgba(112, 150, 104, 0) 0%, #0e685f 100%);
     color: rgb(255, 255, 255);
 }
 
 .wellness_packages h1 {
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 5vw;
+    font-family: 'Kalam';
     text-align: center;
+    line-height: 50%;
     color: red;
+    margin-top: 2%;
+}
+
+.wellness_packages .packages {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+}
+
+.Nutritional_packages,
+.Fitness_Plans {
+    flex-basis: 45%;
+    padding: 2%;
+}
+
+.packages img {
+    height: auto;
+    max-width: 100%;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.packages h2 {
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 1.5vw;
+    padding: 1%;
+    margin-block-start: unset;
+}
+
+.packages .Fitness_Plans h2 {
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 1.5vw;
+    line-height: 1.3em;
+    margin-block-start: unset;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.packages h3 {
+    background: #fff;
+    color: #0e685f;
+    padding: 0.5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.packages_btn {
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: none;
+    padding: 0.7vw;
+    color: #0e685f;
+    font-weight: 500;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+    margin: 2vw;
+    padding: 1vw;
+    transition: background-color 0.5s; 
+}
+
+.packages_btn:hover {
+    background-color: #107e73; 
+    color: #ffffff; 
+}
+
+.bttn {
+    text-align: center;
+}
+
+.Nutritional_packages,
+.Fitness_Plans {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2%;
+    margin-top: -3%;
+}
+
+.Nutritional_packages .pack,
+.Nutritional_packages .desc {
+    font-weight: bold;
+}
+
+.wellness_packages .packages_closure {
+    padding: 4%;
+    display: flex;
 }
