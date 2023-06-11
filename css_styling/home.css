@@ -84,6 +84,12 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+nav ul li a:hover{
+    background: #06655c;
+    color: #fff;
+    /* transform: translateY(-6px); */
+    transition: 0.5s;
+}
 #menuBtn{
     width: 50px;
     height: 50px;
@@ -115,7 +121,7 @@ nav ul li a{
 .who-we-are{
     padding: 100px;
 }
-.container{
+.container-who{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -300,5 +306,128 @@ nav ul li a{
     }
     .aim-img img{
         width: 100%;
+    }
+}
+
+/*This is the footer styling*/
+footer{
+    width: 100%;
+    background-color: #b4c8c3;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+
+.container-footer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 90%;
+    margin: 10px auto 20px;
+}
+.container-footer>div>h2{
+    color: #000100;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.container-footer>div>ul{
+    list-style-type: none;
+}
+.container-footer>div>ul>li{
+    margin: 10px 0;
+    cursor: pointer;
+}
+.container-footer>div>ul>li>a{
+    font-size: 14px;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    left: 0;
+    padding: 2px;
+    color: #000000;
+    transition: all 0.4s;
+}
+.container-footer>div>ul>li>a:hover{
+    left: 8px;
+    background: #06655c;
+    color: #fff;
+    /* transform: translateY(-4px); */
+    transition: 0.7s;
+}
+.container-footer>div>ul>li>a::selection{
+    background-color: rgb(49, 148, 140);
+    color: #b7cbc8;
+}
+.container-footer>div>form{
+    background-color: #2d786b;
+    margin: 10px 0 8px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    width: 100%;
+}
+.container-footer>div>form>input{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    width: 150px;
+    background-color: #fff;
+    color: #000;
+}
+.container-footer>div>form>button{
+    padding: 10px 20px;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.container-footer>div>form>button:hover{
+    background: #06655c;
+    color: #fff;
+    transform: translateY(-6px);
+    transition: 0.5s;
+}
+
+.social-links{
+    text-align: center;
+    align-items: center;
+}
+.social-links .fa{
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    border: 1px solid #06655c;
+    margin: 40px 5px 0;
+    color: #06655c;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 9px;
+}
+.social-links .fa:hover{
+    background: #06655c;
+    color: #fff;
+    transform: translateY(-8px);
+}
+/* .footer-copyright{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 12px;
+    /* line-height: 15px; */
+    /*display: flex;*/
+    /* position: relative; */
+    /* right: 500px; */
+    /*justify-content: center;*/
+
+@media screen and (max-width: 770px) {
+    .container-footer>div{
+        flex-basis: 100%;
+        font-size: 14px;
     }
 }

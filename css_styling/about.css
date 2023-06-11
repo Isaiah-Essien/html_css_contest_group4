@@ -288,3 +288,9 @@ button:hover{
     object-fit: cover;
     border-radius: 50px;
 }
+nav ul li a:hover{
+    background: #06655c;
+    color: #fff;
+    /* transform: translateY(-6px); */
+    transition: 0.5s;
+}
