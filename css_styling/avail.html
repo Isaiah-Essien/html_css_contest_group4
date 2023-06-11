@@ -14,11 +14,8 @@
     </style>
 </head>
 <body>
-  <h1>Avail Packages</h1>
-  
-  <div id="initial-text">
-    <p>Please fill out the form below to let us know which wellness packages you would like to avail.</p>
-  </div>
+  <h1>Available Packages</h1>
+  <p>Please fill out the form below to let us know which wellness packages you would like to avail. Our team will reach out to you shortly to discuss the details and provide further assistance.</p>
   
   <form action="/submit" method="post">
     <label for="name">Full Name:</label>
@@ -54,24 +51,17 @@
   <div id="thank-you">
     <h2>Thank you for your submission!</h2>
     <p>Your package selections have been successfully submitted. Our team will contact you shortly to discuss the next steps and provide further details.</p>
-    <button onclick="goToHomePage()">Back to Home</button>
   </div>
 
   <script>
     const form = document.querySelector('form');
-    const initialText = document.getElementById('initial-text');
     const thankYouMessage = document.getElementById('thank-you');
 
     form.addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent form submission
       form.style.display = 'none'; // Hide the form
-      initialText.style.display = 'none'; // Hide the initial text
       thankYouMessage.style.display = 'block'; // Show the thank you message
     });
-
-    function goToHomePage() {
-      window.location.href = "home.html"; 
-    }
   </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 #banner2{
-    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/nut4.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(/media/images_and_Videos/img-wel.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -34,7 +34,7 @@ main > h1 {
 }
 
 main {
-    background-color:;
+    /* background-color:; */
     opacity: 1;
 }
 
@@ -48,7 +48,6 @@ main {
     align-items: cente;
     margin-bottom: 30px;
     text-align: center;
-    widt 500px;
 }
 
 .Nut-pack h2 {
@@ -129,4 +128,10 @@ main {
 
 .container1 p {
     width: 50%;
+}
+nav ul li a:hover{
+    background: #06655c;
+    color: #fff;
+    /* transform: translateY(-6px); */
+    transition: 0.5s;
 }

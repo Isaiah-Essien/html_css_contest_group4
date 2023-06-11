@@ -16,7 +16,7 @@
 
 <!--This is the Banner section of the landing page-->
         <section id="banner">
-            <a href=""><img src="./media/images_and_Videos/logo_sample.jpg" class="logo"></a>
+            <a href=""><img src="./media/images_and_Videos/logo.png" class="logo"></a>
             <div class="banner-text">
                 <h2>Welcome to</h2>
                 <h1>WELL FIT LIFE</h1>
@@ -46,7 +46,7 @@
 
 <!--This is the Who we are section-->
         <section class="who-we-are">
-            <div class="container">
+            <div class="container-who">
                 <div class="img-section">
                     <img src="./media/images_and_Videos/pic4 (2).jpg" alt="">
                 </div>
@@ -58,7 +58,7 @@
                         and our aim is to support you in achieving optimal well-being. 
                         With WellFit Life, you can elevate your remote wellness and thrive in both your personal and professional life.
                     </p>
-                    <a href="" class="button">Read More</a>
+                    <a href="/about.html" class="button">Read More</a>
                 </div>
             </div>
         </section>
@@ -112,30 +112,75 @@
             </div>
         </section>
 
+<!--Here comes Mister foot-->
+    <footer>
+        <div class="container-footer">
+            <div>
+                <h2>Check Out</h2>
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/Home.html.container-who" target="_blank">Branches of Welfit</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=fcN37TxBE_s" target="_blank">Press & Blog</a></li>
+                    <li><a href="https://www.okoessentials.com.sg/pages/privacy-policy?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqRyWrSG-9Ze-NXEgv8NEtsKe1xXL_Oy4RK9V8UgCa1JAvmlg8wFJYxoC0nsQAvD_BwE" target="_blank">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/Home.html">Back to Home</a></li>
+                    <li><a href="/wellness_packages.html">Wellness packages</a></li>
+                    <li><a href="/about.html">About Welfit</a></li>
+                    <li><a href="/avail.html">Our packages</a></li>
+                    <li><a href="/Home.html">Feedbacks</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Newsletter</h2>
+                <form>
+                    <input type="text" placeholder="Enter your text" />
+                    <button>Search</button>
+                </form>
+                <!-- <p class="footer-copyright">© Isaiah Essien 2023- i.essien@alustudent.com</p> -->
+            </div>
+            <div class="social-links">
+                <h2>Check our Socials</h2>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-youtube-play"></i>
+            </div>
+        </div>
+        <!-- <div class="footer-copyright">
+            <p>© html/css-contest G4- Original Tech Broes 2023</p>
+        </div> -->
+    </footer>
+
 <!--A little script for the menu and side nav. Nothing too serious-->
-<script>
-    var menuBtn = document.getElementById("menuBtn")
-    var sideNav = document.getElementById("sideNav")
-    var menu = document.getElementById("menu")
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
 
-    sideNav.style.right ="-250px"
+        sideNav.style.right ="-250px"
 
-    menuBtn.onclick = function(){
-        if(sideNav.style.right == "-250px"){
-            sideNav.style.right = "0";
-            menu.src ="/media/images_and_Videos/close.png";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src ="/media/images_and_Videos/close.png";
+            }
+            else{
+            sideNav.style.right ="-250px";
+            menu.src ="/media/images_and_Videos/menu.png";
+            }
         }
-        else{
-        sideNav.style.right ="-250px";
-        menu.src ="/media/images_and_Videos/menu.png";
-        }
-    }
 
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 700,
-    speedAsDuration: true
-});
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 700,
+        speedAsDuration: true
+    });
 
-</script
+    </script>
     </body>
 </html>
