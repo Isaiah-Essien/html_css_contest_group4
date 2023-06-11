@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/*--This is the wellness package section sections--*/
+=======
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +18,8 @@
 }
 
 /* The logo and landing page styling continues */
-.logo {
-    width: 50px;
+.logo{
+    width: 70px;
     position: absolute;
     top: 4%;
     left: 7%;
@@ -140,6 +143,7 @@ nav ul li a:hover {
 }
 
 /* This is the wellness package section */
+>>>>>>> 59fa14f42e2eaaaae3b543515a9e15c65835da62
 .wellness_packages {
     left: 20%;
     right: 20%;
@@ -148,6 +152,121 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: -2.6rem;
     background-blend-mode: color;
+<<<<<<< HEAD
+    background: #09413b;
+    background: radial-gradien(
+    50% 85.9% at 50% 10%,
+    rgba(112, 150, 104, 0) 0%,
+    #0e685f 100%
+    );
+    color: rgb(255, 255, 255);
+}
+
+main > h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+main {
+    background-color:;
+    opacity: 1;
+}
+
+.Nut-pack {
+    padding:100px
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: cente;
+    margin-bottom: 30px;
+    text-align: center;
+    widt 500px;
+}
+
+.Nut-pack h2 {
+        text-align: center;
+}
+
+.npack1 {
+    padding-bottom: 30px;
+}
+
+.npack2 {
+    padding-bottom: 30px;
+}
+
+.npack3 {
+    padding-bottom: 30px;
+}
+
+.Fit-pack {
+        padding-left:100px;
+        padding-right: 100px;
+}
+.Fit-pack h2 {
+    text-align: center;
+}
+
+.fpack1 {
+    padding-bottom: 30px;
+}
+
+.fpack2 {
+    padding-bottom: 30px;
+}
+
+.fpack3 {
+    padding-bottom: 30px;
+}
+
+.img-section{
+    flex: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+}
+.img-section img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.content-section p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 p {
+    width: 50%;
+=======
     background: rgb(75, 223, 95);
     background: radial-gradient(50% 85.9% at 50% 10%, rgba(112, 150, 104, 0) 0%, #0e685f 100%);
     color: rgb(255, 255, 255);
@@ -302,4 +421,5 @@ nav ul li a:hover {
     font-size: 18px;
     padding: 4%;
     display: flex;
+>>>>>>> 59fa14f42e2eaaaae3b543515a9e15c65835da62
 }
