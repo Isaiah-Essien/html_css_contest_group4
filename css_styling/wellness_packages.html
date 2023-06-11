@@ -16,34 +16,32 @@
 
         <!--This is the Banner section of the landing page-->
     <section>
-        <a href=""><img src="./media/images_and_Videos/logo_sample.jpg" class="logo"></a>
-    </section>
-
-    <!--Navigation section-->
-    <section>
-        <div class="navbar">
-            <ul>
-                <li><a href="Home.html">HOME</a></li>
-                <li><a href="wellness_packages.html">WELLNESS PACKAGES</a></li>
-                <li><a href="#Wwo">ABOUT US</a></li>
-                <li><a href="#testimonials">AVAILABLE PACKAGES</a></li>
-                <li><a href="#footer">CONTACT US</a></li>
-            </ul>
-        </div>
+        <a href="./Home.html"><img src="./media/images_and_Videos/logo_sample.jpg" class="logo"></a>
     </section>
 
 <!--This is the Banner section of the landing page-->
         <section id="banner">
             <div class="banner-text">
-                <h2>Welcome to</h2>
-                <h1>WELL FIT LIFE</h1>
-                <p>...elevate your wellness</p>
-                <div class="banner-btn">
-                    <a href="wellness_packages.html"><span></span>Nutrition</a>
-                    <a href="wellness_packages.html"><span></span>Fitness</a>
-                </div>
+                <h1>WHAT WE OFFER?</h1>
+                <p>We provide your wellness program all year-round <br>because we believe that personal health and well-being is a lifelong journey.</p>
             </div>
         </section>
+
+    <!--This is the Side Navigation section-->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="./Home.html">HOME</a></li>
+                <li><a href="./wellness_packages.html">WELLNESS PACKAGES</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="#testimonials">AVAIL PACKAGES</a></li>
+                <li><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="./media/images_and_Videos/menu.png" id="menu">
+    </div>
     <main>
     <!--This is the wellness package section sections-->
         <section class="wellness_packages">
@@ -55,11 +53,13 @@
                         <div>
                             <img src="./media/images_and_Videos/Nutrition.jpg" alt="Nutrition">
                         </div>
+                        <div class="nutrition">
                             <p>
                                 Nutrition is crucial in sustaining energy levels and overall health. 
                                 Our Nutrition Plans are tailored to provide remote employees with the necessary nutrients and guidance for optimal well-being. 
-                                <br>We offer the following packages:
+                                <br><span class="offer">We offer the following packages:</span>
                             </p>
+                        </div>
                         <div class="Nutritional_plan">
                             <h3><span class="pack">PACKAGE 1:</span> Balanced Eating</h3>
                             <p>
@@ -100,11 +100,13 @@
                         <div>
                             <img src="./media/images_and_Videos/fitness.jpg" alt="Fitness">
                         </div>
+                        <div class="nutrition"> 
                             <p>
                                 Staying physically active is crucial for maintaining a healthy lifestyle. 
                                 Our Fitness Plans are designed to help remote employees incorporate exercise into their daily routines, regardless of their location.
-                                <br>We offer the following packages:
+                                <br><span class="offer">We offer the following packages:</span>
                             </p>
+                        </div>
                         <div class="fitness_plan">
                             <h3><span class="pack">PACKAGE 1:</span> Home Workouts</h3>
                             <p>
@@ -166,5 +168,30 @@
             <p></p>
         </div>
     </footer>
+<!--A little script for the menu and side nav. Nothing too serious-->
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right ="-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src ="./media/images_and_Videos/close.png";
+        }
+        else{
+        sideNav.style.right ="-250px";
+        menu.src ="./media/images_and_Videos/menu.png";
+        }
+    }
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 700,
+    speedAsDuration: true
+});
+
+</script
 </body>
 </html>
