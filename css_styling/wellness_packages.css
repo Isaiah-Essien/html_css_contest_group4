@@ -1,5 +1,5 @@
 #banner2{
-    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/nut4.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(/media/images_and_Videos/img-wel.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -34,7 +34,7 @@ main > h1 {
 }
 
 main {
-    background-color:;
+    /* background-color:; */
     opacity: 1;
 }
 
