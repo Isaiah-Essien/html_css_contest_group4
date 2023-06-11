@@ -8,8 +8,9 @@
     background: linear-gradient(rgba(0,0,0,0.5), #0e685f), url(./media/images_and_Videos/pexels-cottonbro-studio-4056529.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 10;
+    padding-top: 0px;
     height: 100vh;
+    margin-top: 5px;
 }
 
 /*The logo and landing page styling continues*/
@@ -43,7 +44,7 @@
     display: inline-block;
     margin: 0 10px;
     padding: 12px 0;
-    color: #0e685f;
+    color: #ffffff;
     border: 0.5px solid #fff;
     border-radius: 4px;
     position: relative;
@@ -88,7 +89,7 @@
     text-align: center;
 }
 .navbar a:hover{
-    background: gray;
+    background: #107e73;
 }
 
 /*--This is the wellness package section sections--*/
@@ -109,9 +110,73 @@
 }
 
 .wellness_packages h1 {
-    font-weight: 300;
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 80px;
+    font-family: 'Kalam';
     text-align: center;
+    line-height: 100px;
     color: red;
+}
+.packages img {
+    height: 350px;
+    width: auto;
+}
+.packages {
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.packages h2{
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 24px;
+    line-height: 1.3em;
+    margin-block-start: unset;
+}
+.packages .Fitness_Plans h2{
+    font-family: 'gt_walsheimblack_oblique';
+    font-size: 24px;
+    line-height: 1.3em;
+    margin-block-start: unset;
+    text-align: right;
+    padding-right: 5%;
+}
+.packages h3{
+    background: #fff;
+    color: #0e685f;
+    padding: 0.5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.packages_btn {
+    background:rgb(255, 255, 255);
+    border-radius: 25px;
+    border: none;
+    padding: 0.7rem;
+    color: #0e685f;
+    font-weight: 500;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    align-self: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+.bttn {
+    text-align: center;
+}
+.Nutritional_packages,
+.Fitness_Plans {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    width: 50%;
+    padding: 2%;
+    margin-top: -3%;
+}
+.Nutritional_packages .pack,
+.Nutritional_packages .desc{
+    font-weight: bold;
+}
+.wellness_packages .packages_closure {
+    padding: 4%;
+    display: flex;
 }
