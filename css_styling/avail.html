@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellFit - Avail Packages</title>
+    <title>WellFit</title>
     <link rel="stylesheet" href="./avail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
         /* Hide the thank you message by default */
         #thank-you {
@@ -14,6 +19,32 @@
     </style>
 </head>
 <body>
+    <!--This is the Banner section of the landing page-->
+    <section id="banner">
+        <a href=""><img src="./media/images_and_Videos/logo.png" class="logo"></a>
+        <div class="banner-text">
+            <h1>AVAILABLE PACKAGES</h1>
+            <p>Transform your fitness with our tailored packages: gym access, expert guidance,<br> 
+                personalized plans, and progress tracking for a healthier, stronger you.</p>
+        </div>
+    </section>
+
+<!--This is the Side Navigation section-->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="./Home.html">HOME</a></li>
+                <li class="nav-item"><a href="./wellness_packages.html">WELLNESS PACKAGES</a></li>
+                <li class="nav-item"><a href="./about.html">ABOUT US</a></li>
+                <li class="nav-item"><a href="./avail.html">AVAILABLE PACKAGES</a></li>
+                <li class="nav-item"><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="./media/images_and_Videos/menu.png" id="menu">
+    </div>
+
   <h1>Available Packages</h1>
   <p>Please fill out the form below to let us know which wellness packages you would like to avail. Our team will reach out to you shortly to discuss the details and provide further assistance.</p>
   
@@ -63,48 +94,73 @@
       thankYouMessage.style.display = 'block'; // Show the thank you message
     });
   </script>
-                  <footer>
-                    <div class="container-footer">
-                        <div>
-                            <h2>Check Out</h2>
-                            <ul>
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./Home.html.container-who" target="_blank">Branches of Welfit</a></li>
-                                <li><a href="https://www.youtube.com/watch?v=fcN37TxBE_s" target="_blank">Press & Blog</a></li>
-                                <li><a href="https://www.okoessentials.com.sg/pages/privacy-policy?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqRyWrSG-9Ze-NXEgv8NEtsKe1xXL_Oy4RK9V8UgCa1JAvmlg8wFJYxoC0nsQAvD_BwE" target="_blank">Privacy Policy</a></li>
-                            </ul>
+                    <footer id="footer">
+                        <div class="container-footer">
+                            <div>
+                                <h2>Check Out</h2>
+                                <ul>
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./Home.html.container-who" target="_blank">Branches of Welfit</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=fcN37TxBE_s" target="_blank">Press & Blog</a></li>
+                                    <li><a href="https://www.okoessentials.com.sg/pages/privacy-policy?gclid=CjwKCAjw4ZWkBhA4EiwAVJXwqRyWrSG-9Ze-NXEgv8NEtsKe1xXL_Oy4RK9V8UgCa1JAvmlg8wFJYxoC0nsQAvD_BwE" target="_blank">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Quick Links</h2>
+                                <ul>
+                                    <li><a href="./Home.html">Back to Home</a></li>
+                                    <li><a href="./wellness_packages.html">Wellness packages</a></li>
+                                    <li><a href="./about.html">About Welfit</a></li>
+                                    <li><a href="./avail.html">Our packages</a></li>
+                                    <li><a href="./Home.html">Feedbacks</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Newsletter</h2>
+                                <form>
+                                    <input type="text" placeholder="Enter your text" />
+                                    <button>Search</button>
+                                </form>
+                                <!-- <p class="footer-copyright">© Isaiah Essien 2023- i.essien@alustudent.com</p> -->
+                            </div>
+                            <div class="social-links">
+                                <h2>Check our Socials</h2>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-snapchat"></i>
+                                <i class="fa fa-youtube-play"></i>
+                            </div>
                         </div>
-                        <div>
-                            <h2>Quick Links</h2>
-                            <ul>
-                                <li><a href="./Home.html">Back to Home</a></li>
-                                <li><a href="./wellness_packages.html">Wellness packages</a></li>
-                                <li><a href="./about.html">About Welfit</a></li>
-                                <li><a href="./avail.html">Our packages</a></li>
-                                <li><a href="./Home.html">Feedbacks</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2>Newsletter</h2>
-                            <form>
-                                <input type="text" placeholder="Enter your text" />
-                                <button>Search</button>
-                            </form>
-                            <!-- <p class="footer-copyright">© Isaiah Essien 2023- i.essien@alustudent.com</p> -->
-                        </div>
-                        <div class="social-links">
-                            <h2>Check our Socials</h2>
-                            <i class="fa fa-facebook"></i>
-                            <i class="fa fa-twitter"></i>
-                            <i class="fa fa-instagram"></i>
-                            <i class="fa fa-linkedin"></i>
-                            <i class="fa fa-snapchat"></i>
-                            <i class="fa fa-youtube-play"></i>
-                        </div>
-                    </div>
-                    <!-- <div class="footer-copyright">
-                        <p>© html/css-contest G4- Original Tech Broes 2023</p>
-                    </div> -->
-                </footer>
+                        <!-- <div class="footer-copyright">
+                            <p>© html/css-contest G4- Original Tech Broes 2023</p>
+                        </div> -->
+                    </footer>
+    <!--A little script for the menu and side nav. Nothing too serious-->
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right ="-250px"
+
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src ="./media/images_and_Videos/close.png";
+            }
+            else{
+            sideNav.style.right ="-250px";
+            menu.src ="./media/images_and_Videos/menu.png";
+            }
+        }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 700,
+        speedAsDuration: true
+    });
+
+    </script>
 </body>
 </html>
