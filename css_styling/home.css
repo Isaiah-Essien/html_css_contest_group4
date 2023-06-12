@@ -76,6 +76,11 @@
     font-size: small;
     transition: 0.5s;
 }
+
+.nav-item.active a {
+    color: rgb(255, 255, 255); 
+}
+
 nav ul li{
     list-style: none;
     margin: 50px 20px;
