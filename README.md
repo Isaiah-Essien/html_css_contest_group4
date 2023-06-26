@@ -49,3 +49,11 @@ Home/Landing Page
   we aimed to empower individuals to prioritise their well-being and make informed choices
   about their nutrition and fitness routines. The website aimed to provide valuable information
   and resources to support the overall health and happiness of remote workers.
+
+## where to read and run the website
+
+- There are two folders here- the html structures is where everyone submits their html semantics.
+- and css-styling- where bothe the html final structures and css stylings are located.
+
+- this website should be run in the css-styling folder.
+  This folder contains the html files, accompanied css styling, and images too.
