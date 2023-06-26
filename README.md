@@ -1,11 +1,11 @@
 ## HTML-Semantics and css styling
 
--This project uses correct HTML tags, breaking each part into sections with class and IDs. about-text
--we make use of side navifation menu.
+-This project uses correct HTML tags, breaking each part into sections with classes and IDs. about-text
+-we make use of side navigation menu.
 
--we ensure consistent color of light green and white all through the pages.
+-we ensure consistent light green and white colors throughout the pages.
 
-## Contest QWuestion:
+## Contest Question:
 
 - Digital nomads have become a trend nowadays, and many professionals are considering working remotely and choosing their desired working environment.
   While remote work gives employees flexibility, staying healthy is essential for a work-life balance.
@@ -38,7 +38,7 @@ Home/Landing Page
 
   ## about the website, Welfit life
 
-  Our team embarked on a website development project with the objective of creating a
+  Our team embarked on a website development projectto createg a
   comprehensive platform for remote wellness programs. In today's digital age, the trend of
   remote work has grown exponentially, and it is essential to prioritise the health and
   well-being of employees working in non-traditional office environments. The website aimed
